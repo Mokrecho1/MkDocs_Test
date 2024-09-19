@@ -1,5 +1,3 @@
-# 112, TIGA 
-
 # Missing EFM Retrieval Guide TEST
 
 ## The Integration Group of Americas (TIGA), A Tetra Tech Company
