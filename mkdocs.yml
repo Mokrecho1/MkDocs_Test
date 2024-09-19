@@ -1,11 +1,7 @@
-site_name: MKDocs Test
+site_name: MK Docs Test
 site_description: This is a test deployment of MKdocs via RTD Hosting.
 repo_url: https://github.com/Mokrecho1/MkDocs_Test
 copyright: TIGA 2024
 theme:
    name: readthedocs
-  highlightjs: true
-  hljs_languages:
-    - yaml
-    - rust
-  prev_next_buttons_location: none
+   prev_next_buttons_location: none
