@@ -3,6 +3,7 @@
 The Integration Group of Americas (TIGA), A Tetra Tech Company
 
 |**Purpose of this document**|The purpose of this instructional document is to provide clear and comprehensive guidance to users on effectively utilizing products or processes in order to enhance their proficiency, optimize outcomes, and ensure a consistent experience.|
+|---|---|
 |**Audience**|Technical audiences including new users, experienced practitioners, and anyone seeking detailed instructions and insight into specific products or processes.|
 
 
