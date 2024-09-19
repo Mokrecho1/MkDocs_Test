@@ -16,7 +16,6 @@ This document has the following change history:
 | **Version Letter** | **Date**  |  **Author**  | **Change Description** |
 | ------------------ | --------- | ------------ | ---------------------- |
 | **A**              | 9.12.2024 | Omar Mokrech | Document Creation      |
-|                    |           |              |                        |
 
 ## 2 OVERVIEW
 
@@ -30,9 +29,8 @@ Current efforts have determined the required commands for Emmerson ROCs and Tota
 
 Emmerson ROCs
 
-|   |   |
-|---|---|
 |**Command (In order)**|**Command Function**|
+|---|---|
 |Get Last Hourly Record|Checks the last missing record and calculates how many hourly rows to go back.|
 |Move the Hourly Record Pointer|Takes the hourly rows from the previous (above) command and moves the pointer back in the system.|
 |Retrieve History|Grabs all historical data from the point to the current time and publishes it to SQL.|
@@ -41,9 +39,8 @@ Figure 1 ROCs Flow
 
 Totalflow
 
-|   |   |
-|---|---|
 |**Command (In order)**|**Command Function**|
+|---|---|
 |Set Daily Pointer|Sets the daily pointer to the most recent successful data pull prior to missing data.|
 |Set Log Pointer|Sets the log pointer to the most recent successfully data pull prior to missing data.|
 |Retrieve History|Grabs all historical data from the pointers to the current time and publishes it to SQL.|
@@ -51,13 +48,12 @@ Totalflow
 _Note: A custom logic is required to identify the log pointer/daily pointer start time. Totalflow devices require a timestamp value to be entered rather than hourly rows for retrieval._
 
 
-## 4      OPC UA TAG TO COMMAND ASSOCIATION
+## 4 OPC UA TAG TO COMMAND ASSOCIATION
 
 The above commands exist within the Autosol environment. To trigger commands via Ignition, engineers will need the appropriate OPC UA tag associations to each command. If the commands below do not support current EFM command structures (above), contact Autosol support.  
 
-|   |   |   |   |
-|---|---|---|---|
 |**Proposed Tag Name**|**UDT**|**OPCitemPath**|**Data**<br><br>**Type**|
+|---|---|---|---|
 |LAST_HOURLY_RECORD|_types_/EMERSONROCL/DEVICE|.LastPollAttemptTimeUTC|DateTime|
 |MOVE_HOURLY|_types_/EMERSONROCL/DEVICE|.MoveHourly|Short|
 |RETRIEVE_HISTORY|_types_/EMERSONROCL/DEVICE|.RetrieveHistory|Boolean|
