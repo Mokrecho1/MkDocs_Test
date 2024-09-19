@@ -14,9 +14,8 @@ The Integration Group of Americas (TIGA), A Tetra Tech Company
 
 This document has the following change history:
 
-|                    |           |              |                        |
+| **Version Letter** | **Date**  |  **Author**  | **Change Description** |
 | ------------------ | --------- | ------------ | ---------------------- |
-| **Version Letter** | **Date**  | **Author**   | **Change Description** |
 | **A**              | 9.12.2024 | Omar Mokrech | Document Creation      |
 |                    |           |              |                        |
 
