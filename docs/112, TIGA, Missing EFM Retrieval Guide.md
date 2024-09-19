@@ -1,6 +1,6 @@
 # Missing EFM Retrieval Guide TEST
 
-## The Integration Group of Americas (TIGA), A Tetra Tech Company
+The Integration Group of Americas (TIGA), A Tetra Tech Company
 
 |   |   |
 |---|---|
@@ -8,9 +8,9 @@
 |**Audience**|Technical audiences including new users, experienced practitioners, and anyone seeking detailed instructions and insight into specific products or processes.|
 
 
-# 1 DOCUMENT INFORMATION
+## 1 DOCUMENT INFORMATION
 
-## 1.1 VERSION CONTROL
+### 1.1 VERSION CONTROL
 
 This document has the following change history:
 
@@ -20,13 +20,13 @@ This document has the following change history:
 | **A**              | 9.12.2024 | Omar Mokrech | Document Creation      |
 |                    |           |              |                        |
 
-# 2 OVERVIEW
+## 2 OVERVIEW
 
 Retrieving missing Electronic Flow Measurement (EFM) data through Autosol requires device command triggers. Each device type will require different command triggers to successfully retrieve EFM data. Once device commands are triggered, devices will provide missing data respective to the requested date. Engineers will need to establish publishers and databases within Autosol prior to triggering commands to successfully retrieve missing data. For information on publishers and databases, reference 6 PUBLISHER & DATABASE SETUP.
 
 _Note: As with most devices EFM data can only be collected up to 30 days in the past. Devices typically delete internal data past the 30–35-day point. The earliest data will be deleted and replaced with the newest day data once past the designated data save date._ 
 
-# 3 COMMANDS
+## 3 COMMANDS
 
 Current efforts have determined the required commands for Emmerson ROCs and TotalFlow device missing EFM data retrieval. If Autosol is leveraging a different device type, contact Autosol support to determine the appropriate commands needed.
 
@@ -53,7 +53,7 @@ Totalflow
 _Note: A custom logic is required to identify the log pointer/daily pointer start time. Totalflow devices require a timestamp value to be entered rather than hourly rows for retrieval._
 
 
-# 4      OPC UA TAG TO COMMAND ASSOCIATION
+## 4      OPC UA TAG TO COMMAND ASSOCIATION
 
 The above commands exist within the Autosol environment. To trigger commands via Ignition, engineers will need the appropriate OPC UA tag associations to each command. If the commands below do not support current EFM command structures (above), contact Autosol support.  
 
@@ -74,9 +74,11 @@ Certain commands that cannot be triggered via OPC UA Tags can be leveraged for t
 
 _Note: The above OPC UA tags will reoccur anytime Autosol is used in a project. Autosol has **not** exposed all OPC UA tags tied to commands._
 
-# 5      PRUNING PROCESS
+## 5 PRUNING PROCESS
 
 The EFM retrieval process will create duplicate records for existing data on devices. A pruning process must be implemented to remove duplicate records from the system. The pruning process should be a named query that runs daily to eliminate duplicate records. Successful pruning will result in one (1) single record for each data device. Pruning is leveraged to mitigate database bloat. Engineers can leverage the following Script and Query for future use cases:
+
+Script
 
 ```python
 def onScheduledEvent():
@@ -139,7 +141,7 @@ WHERE EXISTS (
 SELECT COUNT(*) AS DeletedRecords FROM @DeletedRecords;
 ```
 
-# 6 PUBLISHER & DATABASE SETUP
+## 6 PUBLISHER & DATABASE SETUP
 
 Autosol Publisher and database connections are required to store all EFM retrieved history. It is recommended to create a new SQL database for EFM tables. Establishing the publisher and database will allow Autosol to create SQL tables for the respective EFM information. Once an EFM database is created, Autosol will start collecting EFM data in the created tables.
 
@@ -149,7 +151,7 @@ Existing EFM data should be collected and stored within a separate database. Mis
 
 Engineers will also need to establish queries that combine EFM tables and send information from the tables to Ignition screens.
 
-# 7 MULTITASKING COMMAND TRIGGERS
+## 7 MULTITASKING COMMAND TRIGGERS
 
 Engineers can leverage threading to trigger multiple commands to Autosol at once rather than sequentially. Threading aims to begin all operations concurrently. For each action tasked, the treading query begins a “thread” and then joins all threads together to execute simultaneously, resulting in parallel execution. Engineers can leverage the following script for future use cases:
 
