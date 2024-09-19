@@ -1,3 +1,8 @@
 site_name: MKDocs Test
 site_description: This is a test deployment of MKdocs via RTD Hosting.
-theme: MKDocs
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
