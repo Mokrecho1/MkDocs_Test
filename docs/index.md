@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# Project MD
+**9.20.2024**
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-**9.16.2024**
-# 1 ABSTRACT
+## 1 ABSTRACT
 
 _Project MD re-envisions how TIGA can provide documentation to clients. Leveraging pre-existing open-source tools, Project MD provides a more secure, accessible, and flexible documentation delivery system that can be adapted to the Industrial Internet of Things (IIoT)._
 
-# 2 WHAT IS PROJECT MD
+## 2 WHAT IS PROJECT MD
 
 Project MD is a combined application of open-source tools pertaining to written documentation. The goal of Project MD was to provide a novel approach to documentation that can adapt to existing cybersecurity regulations and provide additional revenue sources for TIGA. 
 
-# 3 CURRENT SYSTEM
+## 3 CURRENT SYSTEM
 
 Current client driven documentation efforts result in the production of either a word document or a SharePoint site. While both are equally feasible in providing satisfactory documentation, each format has shortcomings including but not limited to:
 
@@ -25,7 +23,7 @@ Current client driven documentation efforts result in the production of either a
 
 · Formatting
 
-# 4 HOW DOES PROJECT MD CHANGE THIS?
+## 4 HOW DOES PROJECT MD CHANGE THIS?
 
 Project MD provides new possible documentation deliverable formats for clients, circumnavigating current document limitations. With Project MD, documentation can exist entirely on a GitHub repository owned and operated by TIGA and publish documentation to either a webhosted solution or a client server.
 
@@ -37,7 +35,7 @@ The benefits of Project MD shine when it comes to updating documentation. With a
 
 **Use Case Example:** TIGA may provide standard documentation across several clients. As times change and systems update, all clients need the updated document. Traditionally this would require sending the clients a new copy or rewriting it in their current SharePoint. With Project MD, all we need to do is update the document in our local repo and push to main. The system will automatically update the document across all connected platforms.
 
-# 5 HOW DOES IT WORK?
+## 5 HOW DOES IT WORK?
 
 Project MD works by leveraging a GitHub repository as the source of truth. From there, MKDocs, a static site generator, is installed into the repository. MKDocs takes all markdown documentation in the repository and generates a local site.
 
