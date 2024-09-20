@@ -35,7 +35,7 @@ The benefits of Project MD shine when it comes to updating documentation. With a
 
 **Use Case Example:** TIGA may provide standard documentation across several clients. As times change and systems update, all clients need the updated document. Traditionally this would require sending the clients a new copy or rewriting it in their current SharePoint. With Project MD, all we need to do is update the document in our local repo and push to main. The system will automatically update the document across all connected platforms.
 
-![Image title](https://github.com/Mokrecho1/MkDocs_Test/blob/main/docs/images/testimage1.png?raw=true){ loading=lazy }
+![Image title](https://github.com/Mokrecho1/MkDocs_Test/blob/main/docs/images/testimage1.png?raw=true)
 
 ## 5 HOW DOES IT WORK?
 
