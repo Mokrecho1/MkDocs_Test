@@ -1,6 +1,8 @@
 site_name: Example Documentation Site
 repo_url: https://github.com/Mokrecho1/MkDocs_Test
+
 copyright: Proprietary information, for the express use of TIGA, A Tetra Tech Company
+
 theme:
    name: material
    features:
@@ -16,6 +18,23 @@ theme:
    palette:
       scheme: slate
       primary: indigo
+
+markdown_extensions:
+   - pymdownx.highlight:
+      anchor_linenums: true
+   - pymdownx.inlinehilite
+   - pymdownx.snippets
+   - admonition
+   - pymdownx.arithamtex:
+      generic: true
+   - footnotes
+   - pymdownx.details
+   - pymdownx.superfences
+   - pymdownx.mark
+   -attr_list
+   - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 Extra:
    social:
