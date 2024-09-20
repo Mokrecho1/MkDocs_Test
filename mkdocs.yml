@@ -16,3 +16,9 @@ theme:
    palette:
       scheme: slate
       primary: indigo
+
+Extra:
+   social:
+      - icon: fontawesome/brands/linkedin
+        link: https://www.linkedin.com/company/the-integration-group-of-americas-inc
+   
