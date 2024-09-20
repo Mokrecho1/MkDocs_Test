@@ -19,20 +19,6 @@ theme:
       scheme: slate
       primary: indigo
 
-markdown_extensions:
-   - pymdownx.highlight:
-      anchor_linenums: true
-   - pymdownx.inlinehilite
-   - pymdownx.snippets
-   - admonition
-   - pymdownx.arithamtex:
-      generic: true
-   - footnotes
-   - pymdownx.details
-   - pymdownx.superfences
-   - pymdownx.mark
-   -attr_list
-
 Extra:
    social:
       - icon: fontawesome/brands/linkedin
