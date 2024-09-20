@@ -24,3 +24,7 @@ Extra:
       - icon: fontawesome/brands/linkedin
         link: https://www.linkedin.com/company/the-integration-group-of-americas-inc
    
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
