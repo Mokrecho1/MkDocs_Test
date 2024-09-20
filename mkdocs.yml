@@ -3,6 +3,16 @@ repo_url: https://github.com/Mokrecho1/MkDocs_Test
 copyright: Proprietary information, for the express use of TIGA, A Tetra Tech Company
 theme:
    name: material
+   features:
+      - navigation.tabs
+      - navigation.sections
+      - toc.integrate
+      - search.suggest
+      - search.highlight
+      - content.tabs.link
+      - content.code.annotation
+      - content.code.copy
+   language: en
    palette:
       scheme: slate
       primary: indigo
