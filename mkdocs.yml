@@ -6,9 +6,6 @@ copyright: Proprietary information, for the express use of TIGA, A Tetra Tech Co
 theme:
    name: material
    features:
-      - navigation.tabs
-      - navigation.sections
-      - toc.integrate
       - search.suggest
       - search.highlight
       - content.tabs.link
