@@ -1,4 +1,4 @@
-# Missing EFM Retrieval Guide This is brand new
+# Missing EFM Retrieval Guide
 
 The Integration Group of Americas (TIGA), A Tetra Tech Company
 
